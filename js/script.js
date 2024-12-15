@@ -22,7 +22,8 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder;
     // 👇 Use relative path instead of absolute path
-    let a = await fetch(`${folder}/`);
+    let a = await fetch(`songs/ncs/`);
+
     let response = await a.text();
     let div = document.createElement("div");
     div.innerHTML = response;
