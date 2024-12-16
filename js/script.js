@@ -22,7 +22,7 @@ function secondsToMinutesSeconds(seconds) {
 async function getSongs(folder) {
     currFolder = folder;
     // 👇 Use relative path instead of absolute path
-    let a = await fetch(`./songs/ncs/`);
+    let a = await fetch('https://raw.githubusercontent.com/nakul-xd/Spotify-UI-clone/main/songs/ncs/');
 
     let response = await a.text();
     let div = document.createElement("div");
